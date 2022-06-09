@@ -1,0 +1,56 @@
+@import '../../scss/variables';
+@import '../../scss/base';
+
+.banner-section {
+    padding-top: 0;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 2rem;
+    }
+
+    .banner-container {
+        @include container;
+        background-color: $dark-violet;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        color: $white;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 2.5rem;
+            text-align: center;
+            padding: 5rem 3rem;
+        }
+
+        img {
+            max-width: 19rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            @media screen and (max-width: 768px) {
+                max-width: 11rem;
+            }
+        }
+
+        h1 {
+            font-weight: $fw-400;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+
+        .banner-btn {
+            @include btn;
+            z-index: 9;
+
+            &:hover {
+                color: $dark-violet;
+                background-color: $white;
+            }
+        }
+
+    }
+}

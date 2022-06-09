@@ -1,0 +1,106 @@
+@import '../../scss/variables';
+@import '../../scss/base';
+
+footer {
+    background-color: $very-light-gray;
+    position: relative;
+
+    .footer-bg {
+        position: absolute;
+        max-width: 30rem;
+        top: 0;
+        left: 0;
+
+        @media screen and (max-width: 768px) {
+           max-width: 25rem;
+        }
+    }
+    .footer-container {
+        @include container;
+        width: 100%;
+        z-index: 9;
+        position: relative;
+
+        .heading {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-family: 'Karla';
+                color: $very-dark-violet;
+                font-weight: $fw-700;
+                cursor: pointer;
+            }
+            .socials {
+                display: flex;
+                gap: 1rem;
+
+                img {
+                    max-width: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        hr {
+            width: 100%;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            padding: 2rem 0;
+            gap: 15rem;
+            text-transform: uppercase;
+            font-family: 'Karla', sans-serif;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+
+
+            .col {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: $dark-grayish-violet;
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                    font-weight: $fw-400;
+                    letter-spacing: 2px;
+                }
+                a {
+                    color: $very-dark-violet;
+                    font-weight: $fw-700;
+                    padding: 0.3rem 0;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .attribution { 
+            text-align: center; 
+
+            a { 
+                color: $very-dark-violet; 
+            }
+        }
+    }
+}

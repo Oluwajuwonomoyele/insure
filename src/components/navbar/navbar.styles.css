@@ -1,0 +1,108 @@
+img {
+  width: 100%;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+a, p {
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+header .header-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  header .header-container {
+    padding: 1rem;
+  }
+}
+
+header .header-container .logo {
+  cursor: pointer;
+}
+
+header .header-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  text-transform: uppercase;
+}
+
+header .header-container nav ul li a {
+  color: #837d87;
+  cursor: pointer;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header-container nav ul li a:hover {
+  color: #2d2640;
+}
+
+header .header-container nav ul .nav-btn {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #2d2640;
+  border: 2px solid #2d2640;
+}
+
+header .header-container nav ul .nav-btn:hover {
+  background-color: #2d2640;
+  color: #fff;
+}
+/*# sourceMappingURL=navbar.styles.css.map */

@@ -1,0 +1,38 @@
+img {
+  width: 100%;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+a, p {
+  font-family: 'Karla', sans-serif;
+}
+
+.hero-section {
+  background-color: #2d2640;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=hero.styles.css.map */
