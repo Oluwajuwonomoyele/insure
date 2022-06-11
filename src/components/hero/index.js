@@ -13,13 +13,13 @@ const Hero = () => {
     const [mobile, setMobile] = useState(false);
 
     const handleImage = () => {
-        if(window.innerWidth < 768){
+        if(window.innerWidth <= 768){
             setMobile(true)
         }else {
             setMobile(false)
         }
     }
-    useEvent('DOMContentLoaded', handleImage)
+    useEvent('resize', handleImage)
 
     return ( 
         <>
@@ -37,7 +37,7 @@ const Hero = () => {
                         <Link to='/' className='hero-btn'>view plans</Link>
                         <img src={introRightMobile} alt="" className="mobile-right"/>
                     </div>
-                    <div className="col">
+                    <div className="col hero-image">
                         {mobile ? (
                             <img src={mobileIntro} alt="intro image" />
                         ) : (

@@ -5,6 +5,10 @@
     background-color: $dark-violet;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        overflow: hidden;
+    }
+
     .top-right {
         position: absolute;
         right: 0;
@@ -31,42 +35,46 @@
         @include container;
         color: $white;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         gap: 5rem;
-        height: 30rem;
-        padding-top: 5rem;
-        position: relative;
+        height: 20rem;
+        width: 100%;
+        margin-top: 10rem;
 
         @media screen and (max-width: 768px){
             flex-direction: column-reverse;
             height: auto;
             text-align: center;
             padding: 0 0;
+            margin-top: 0;
             gap: 0;
         }
 
         .col {
             flex-basis: 50%;
+            position: relative;
 
             @media screen and (max-width: 768px){
                 flex-basis: 100%;
             }
-
-            img {
-                transform: translateY(8rem) translateX(-5rem) scale(0.8);
-
-                @media screen and (max-width: 768px){
-                    transform: translate(0,0) scale(1);
-                }
-
-            }
+            
             h1 {
                 font-size: 3.5rem;
                 font-weight: 400;
                 line-height: 1.1;
                 margin-bottom: 1rem;
                 position: relative;
+
+                @media screen and (max-width: 768px){
+                    padding: 0 4rem;
+                }
+
+                @media screen and (max-width: 425px){
+                    font-size: 3rem;
+                    padding: 0;
+                }
+                
 
                 &::after {
                     content: '';
@@ -101,10 +109,10 @@
         }
 
         .hero-content {
-            position: relative;
 
             @media screen and (max-width: 768px) {
                 padding: 6rem 2rem;
+                position: relative
             }
 
             img {
@@ -127,6 +135,25 @@
                 right: 0;
                 max-width: 10rem;
             }
+        }
+
+        .hero-image {
+
+            img {
+
+                position: absolute;
+                top: -4rem;
+                right: 0;
+                left: 0;
+
+                @media screen and (max-width: 768px){
+                    position: static;
+                    display: block;
+                    width: 100vw;
+                    object-fit: contain;
+                }
+            }
+
         }
 
     }

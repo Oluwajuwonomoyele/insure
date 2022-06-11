@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/insure-landing-page-using-react-js-and-sass-ODKKJcD7nO)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://oluwajuwonomoyele-insure.netlify.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 ### Useful resources
 
 - [freecodecamp](https://www.freecodecamp.com)
-- [reactjs website](https://www.reactjs.org)
+- [reactjs](https://www.reactjs.org)
 
 
 ## Author

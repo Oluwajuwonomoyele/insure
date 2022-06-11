@@ -10,7 +10,7 @@ const Banner = () => {
     const [mobile, setMobile] = useState(null)
 
     const handleMobileImage = () => {
-        if(window.innerWidth < 768){
+        if(window.innerWidth <= 768){
             setMobile(true)
         }else {
             setMobile(false)
